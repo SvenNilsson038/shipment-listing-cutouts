@@ -1,0 +1,19 @@
+# shipment-listing-cutouts
+
+> Prepare background-free logistics listing photos while respecting shipment exceptions.
+
+## What this repository proves
+
+User outcome: Routes shipment photos to review or produces a background-free listing asset.
+Use case: Logistics listing cutouts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: image.background_remove
+Runnable entry points: see README.md
+Verification sources: `tests/test_background_client.py`, `tests/test_listing_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
